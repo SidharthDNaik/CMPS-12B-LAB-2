@@ -1,0 +1,15 @@
+public class FileReverse{
+
+  public static String stringReverse(String s, int n){
+    char[] reverseString = new char[n];
+    for(int i = n-1, k = 0; i > 0; i--, k++){
+      reverseString[k] = s.charAt(i);
+    }
+    return new String(reverseString);
+  }
+
+  public static void main(String[] args){
+    System.out.println("Your reversedString = " + stringReverse(args[0],args[0].length));
+  }
+
+}
